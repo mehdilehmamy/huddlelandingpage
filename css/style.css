@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.hero {
+    padding: 3rem;
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-color: hsl(193, 100%, 96%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    width: 15%;
+}
+
+.navbar button {
+    color: hsl(192, 100%, 9%);
+    font-weight: 700;
+    padding: 0.5rem 3rem;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.intro-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro, .intro-img {
+    width: 50%;
+}
+
+.intro-img img {
+    width: 100%;
+}
+
+.intro {
+    padding-right: 4rem;
+}
+
+.intro h1, p {
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+.intro button {
+    color: white;
+    margin-top: 1rem;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    padding: 3rem;
+    margin-top: 5rem;
+}
+
+.feature {
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem 3rem 6rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.feature-text {
+    width: 50%;
+}
+
+.feature-text h1 {
+    margin-bottom: 1rem;
+}
+
+.feature-text p {
+    line-height: 1.5;
+    color: hsl(208, 11%, 55%);
+}
+
+.feature-img {
+    width: 40%;
+}
+
+.community {
+    position: relative;
+    background-color: white;
+    padding: 5rem 3rem;
+    margin: 5rem auto -6rem auto;
+    width: 55%;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.community button {
+    color: white;
+    margin-top: 1rem;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 10rem 4rem 4rem 4rem;
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: white;
+}
+
+.huddle {
+    margin-right: 4rem;
+}
+
+.huddle div {
+    margin-bottom: 1rem;
+}
+
+.inline-icon {
+    display: inline;
+}
+
+footer p {
+    display: inline;
+    margin-left: 0.5rem;
+}
+
+.logo-footer {
+    margin-bottom: 2rem;
+}
+
+.huddle, .contact {
+    width: 33%;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact li {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE DESIGN */
+
+@media screen and (max-width: 767px) {
+    .hero {
+        padding: 2rem;
+    }
+    .navbar img {
+        width: 30%;
+    }
+
+    .navbar button {
+        width: 15%;
+        font-size: 0.7rem;
+    }
+
+    .intro-container {
+        margin-top: 6rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 4rem;
+    }
+
+    .intro-img, .intro-img img {
+        width: 100%;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .feature {
+        padding: 3rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .feature img {
+        order: -1;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .feature-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .community {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .community h1 {
+        font-size: 1.5rem;
+    }
+
+    .community button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        width: 50%;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .huddle, .contact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .huddle {
+        margin-bottom: 2rem;
+    }
+}
